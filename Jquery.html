@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <input type="text" placeholder="Enter value" id="value1">
+
+    <input type="text" placeholder="Enter your value" id="value2">
+
+    <button id="btn">Add</button>
+
+    <label for="number1"> Choose number</label>
+    <select id="number1">
+
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+
+    </select>
+
+    <label for="number2"> Choose number</label>
+    <select id="number2">
+
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+
+    </select>
+
+    <p id="result">Result</p>
+
+
+    <script>
+
+        $("#result").hide();
+
+        // Mouse enter
+        $("#btn").mouseenter(function () {
+
+            $(this).css("backgroundColor", "blue");
+
+        });
+
+        // Mouse leave
+        $("#btn").mouseout(function () {
+
+            $(this).css("backgroundColor", "");
+
+        });
+
+        // Button click
+        $("#btn").click(function (e) {
+
+            e.preventDefault();
+
+            let value1 = Number($("#value1").val());
+
+            let value2 = Number($("#value2").val());
+
+            let total = value1 + value2;
+
+            $("#result").show().text(total);
+
+
+        });
+
+        // Press Enter key
+        $("input").keydown(function (e) {
+
+            if (e.key === "Enter") {
+
+                let value1 = Number($("#value1").val());
+
+                let value2 = Number($("#value2").val());
+
+                let total = value1 + value2;
+
+                $("#result").show().text(total);
+
+            }
+
+        });
+
+        $("#number1").change(function () {
+
+            let option1 = $(this).val();
+            $("#value1").val(option1);
+        })
+
+        $("#number2").change(function () {
+            let option2 = $(this).val();
+            $("#value2").val(option2);
+        })
+
+    </script>
+
+</body>
+
+</html>

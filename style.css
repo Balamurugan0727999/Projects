@@ -1,0 +1,222 @@
+ body {
+     height: 130vh;
+     margin: 0;
+     background-color: black;
+     align-items: center;
+ }
+
+ .box1 {
+     color: white;
+     text-align: center;
+ }
+
+ .inline {
+     display: inline;
+     cursor: pointer;
+ }
+
+ .Header:hover {
+     color: gray;
+ }
+
+ .inline:hover {
+     color: gray;
+ }
+
+ .list {
+
+     border-radius: 10px;
+     height: 70vh;
+     width: 85vw;
+     margin-top: 7vh;
+     margin-left: 5vw;
+     background-color: white;
+     position: relative;
+ }
+
+ .box2 {
+     border-radius: 30px;
+     border: 5px gray solid;
+     width: 17.8vw;
+     padding: 5px;
+     height: 65vh;
+     display: inline-block;
+     position: absolute;
+     left: 5vw;
+     top: 1vh;
+     text-align: center;
+     background-color: gray;
+     color: rgb(0, 0, 0);
+ }
+
+ .foodName {
+     font-family: sans-serif;
+     color: white;
+ }
+
+ .sushi {
+     border-radius: 30px;
+ }
+
+ .para1 {
+     position: absolute;
+     top: 40vh;
+ }
+
+ .order {
+     border-radius: 20px;
+     color: white;
+     background-color: black;
+     position: absolute;
+     left: 6vw;
+     bottom: 1vh;
+     padding: 5px;
+ }
+
+ .order:hover {
+     cursor: pointer;
+     background-color: blue;
+ }
+
+ .box3 {
+     border-radius: 30px;
+     border: 5px gray solid;
+     width: 25vw;
+     padding: 5px;
+     height: 65vh;
+     display: inline-block;
+     position: absolute;
+     left: 25vw;
+     top: 1vh;
+     text-align: center;
+     background-color: gray;
+     color: rgb(0, 0, 0);
+ }
+
+ .para2 {
+     position: absolute;
+     top: 45vh;
+ }
+
+ .order1 {
+     border-radius: 20px;
+     color: white;
+     background-color: black;
+     position: absolute;
+     left: 10vw;
+     bottom: 1vh;
+     padding: 5px;
+ }
+
+ .order1:hover {
+     cursor: pointer;
+     background-color: blue;
+ }
+
+ .box4 {
+     border-radius: 30px;
+     border: 5px gray solid;
+     width: 25vw;
+     padding: 5px;
+     height: 65vh;
+     display: inline-block;
+     position: absolute;
+     left: 52.5vw;
+     top: 1vh;
+     text-align: center;
+     background-color: gray;
+     color: rgb(0, 0, 0);
+ }
+
+ .order2 {
+     border-radius: 20px;
+     color: white;
+     background-color: black;
+     position: absolute;
+     left: 10vw;
+     bottom: 1vh;
+     padding: 5px;
+ }
+
+ .order2:hover {
+     cursor: pointer;
+     background-color: blue;
+ }
+
+ .para3 {
+     position: absolute;
+     top: 38vh;
+ }
+
+ .contact {
+     display: inline-block;
+     color: wheat;
+     position: absolute;
+     top: 78vh;
+     left: 38vw;
+ }
+
+ .name {
+     display: inline-block;
+     color: wheat;
+     position: absolute;
+     top: 86vh;
+     left: 35vw;
+ }
+
+ .nameValue {
+     display: inline-block;
+     color: rgb(0, 0, 0);
+     position: absolute;
+     top: 88vh;
+     left: 38vw;
+ }
+
+ .age {
+     display: inline-block;
+     color: rgb(255, 252, 247);
+     position: absolute;
+     top: 90vh;
+     left: 35vw;
+ }
+
+ .ageValue {
+     display: inline-block;
+     color: rgb(0, 0, 0);
+     position: absolute;
+     top: 92vh;
+     left: 38vw;
+ }
+
+ .email {
+     display: inline-block;
+     color: rgb(255, 246, 246);
+     position: absolute;
+     top: 94vh;
+     left: 34vw;
+ }
+
+ .emailValue {
+     display: inline-block;
+     color: wheat;
+     position: absolute;
+     top: 96vh;
+     left: 38vw;
+ }
+
+ .send {
+     display: inline-block;
+     background-color: aqua;
+     border-radius: 5px;
+     padding-left: 90px;
+     padding-right: 90px;
+     padding-top: 6px;
+     color: wheat;
+     position: absolute;
+     top: 102vh;
+     left: 36vw;
+ }
+
+ .send:hover {
+     background-color: rgb(10, 102, 102);
+ }

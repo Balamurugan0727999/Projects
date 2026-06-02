@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Change text -->
+    <p id="text">Hello</p>
+    <button onclick="changeText()">Change Text</button>
+    <hr>
+
+    <!-- change style -->
+    <p id="styleText">This is styled text</p>
+    <button onclick="changeStyle()">Change Style</button>
+    <hr>
+
+    <!-- Hide or show elements  -->
+    <p id="message">This text can hide</p>
+    <button onclick="hideText()">Hide</button>
+    <button onclick="showText()">Show</button>
+    <hr>
+
+    <!-- Add new element -->
+    <div id="container"></div>
+
+    <button onclick="addElement()">Add Element</button>
+    <hr>
+
+    <!-- Read input values -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+
+    <button onclick="showName()">Submit</button>
+    <hr>
+
+    <p id="result"></p>
+
+    <script>
+
+        function changeText() {
+            document.getElementById("text").textContent = "Welcome!";
+        }
+        function changeStyle() {
+            let text = document.getElementById("styleText");
+
+            text.style.color = "white";
+            text.style.backgroundColor = "blue";
+            text.style.fontSize = "50px";
+            text.style.width = "600px"
+        }
+
+        function hideText() {
+            document.getElementById("message").style.display = "none";
+        }
+
+        function showText() {
+            document.getElementById("message").style.display = "block";
+        }
+
+        function addElement() {
+            let para = document.createElement("p");
+
+            para.textContent = "New paragraph added!";
+
+            document.getElementById("container").appendChild(para);
+        }
+
+        function showName() {
+            let name = document.getElementById("nameInput").value;
+
+            document.getElementById("result").textContent =
+                "Hello " + name;
+        }
+    </script>
+</body>
+
+</html>

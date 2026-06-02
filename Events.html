@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Click event -->
+    <button onclick="showMessage()">Click Me</button><br>
+    <hr>
+
+    <!-- KEy press event -->
+    <input type="text" onkeyup="showText()" id="inputBox" placeholder="Name"><br>
+    <hr>
+
+    <!-- Mouse move event -->
+    <div onclick="moveMouse()">
+        <h3>Move mouse here</h3> <br>
+        <hr>
+
+        <!-- Form submit event  -->
+        <form onsubmit="submitForm()">
+
+            <input type="text" placeholder="name">
+
+            <button type="submit">
+                Submit
+            </button><br>
+            <hr>
+
+            <!-- Page load event -->
+
+            <body onload="pageLoaded()"></body>
+
+        </form>
+    </div>
+    <script>
+
+        function showMessage() {
+            alert("Button clicked!");
+        }
+
+        function showText() {
+            let text = document.getElementById("inputBox").value;
+
+            console.log(text);
+        }
+
+        function moveMouse() {
+            console.log("Mouse moving");
+        }
+
+        function submitForm() {
+            alert("Form submitted");
+        }
+
+        function pageLoaded() {
+            alert("Page loaded");
+        }
+
+    
+    </script>
+    </button>
+</body>
+
+</html>
